@@ -3,8 +3,8 @@ const userInput = prompt(
     "vanilla, vanilla, vanilla, strawberry, coffee, coffee"
 );
 
-const flavorArray = userInput.split(",");
-function tally(arr) {
+const flavorArray = userInput.split(", ");
+function tally(flavorArray) {
   const flavorObject = {};
   for (const flavor of flavorArray) {
     if (flavor in flavorObject) {
